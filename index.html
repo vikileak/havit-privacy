@@ -55,6 +55,7 @@
     }
     h2 .icon { font-size: 18px; }
     p { color: #374151; font-size: 15px; }
+    p + p { margin-top: 10px; }
     ul { color: #374151; font-size: 15px; padding-left: 20px; }
     ul li { margin-bottom: 4px; }
     a { color: #2e7d32; text-decoration: none; }
@@ -65,6 +66,7 @@
       font-size: 13px;
       margin-top: 48px;
     }
+    .footer a { color: #9ca3af; }
   </style>
 </head>
 <body>
@@ -77,23 +79,39 @@
     </div>
 
     <h1>Privacy Policy</h1>
-    <p class="subtitle">HavIt: Personal Inventory &nbsp;·&nbsp; Last updated April 21, 2026</p>
+    <p class="subtitle">HavIt: Personal Inventory &nbsp;·&nbsp; Last updated April 26, 2026</p>
 
     <div class="card">
       <h2><span class="icon">📦</span> What we collect</h2>
-      <p>HavIt stores only the data you enter: inventory items, shopping lists, and your account email address. Nothing is collected passively or in the background.</p>
+      <p>HavIt stores only the data you enter: inventory items (names, categories, purchase prices, expiry dates, quantities), item photos, shopping lists, and your account email address.</p>
+      <p>Nothing is collected passively or in the background beyond what is described in this policy.</p>
     </div>
 
     <div class="card">
       <h2><span class="icon">☁️</span> Where it's stored</h2>
-      <p>Your data is stored in Google Firebase (Firestore), protected by your sign-in credentials. It is accessible only to your account and is encrypted in transit and at rest.</p>
+      <p>Your data is stored in Google Firebase (Firestore for structured data, Firebase Storage for photos), protected by your sign-in credentials. It is accessible only to your account and is encrypted in transit and at rest.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">🤖</span> AI photo scan (optional)</h2>
+      <p>HavIt optionally uses AI to identify items from photos. This feature requires you to provide your own API key from a third-party AI provider (Google Gemini, OpenAI, or Anthropic). When you use it, the photo is sent directly to that provider under your account and their privacy policy applies. API keys are stored only on your device and are never uploaded to our servers.</p>
+      <ul style="margin-top: 8px;">
+        <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+        <li><a href="https://openai.com/policies/privacy-policy" target="_blank">OpenAI Privacy Policy</a></li>
+        <li><a href="https://www.anthropic.com/legal/privacy" target="_blank">Anthropic Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">📢</span> Advertising</h2>
+      <p>HavIt displays banner ads served by Google AdMob. AdMob may use device identifiers to serve contextual ads. No personal inventory data is shared with AdMob. See <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a> for details.</p>
     </div>
 
     <div class="card">
       <h2><span class="icon">🚫</span> What we don't do</h2>
       <ul>
         <li>We do not sell your data to anyone.</li>
-        <li>We do not share your data with third parties.</li>
+        <li>We do not share your inventory data with third parties.</li>
         <li>We do not use your data for advertising profiling.</li>
         <li>We do not collect analytics or crash reports beyond what Firebase provides.</li>
       </ul>
@@ -101,12 +119,12 @@
 
     <div class="card">
       <h2><span class="icon">🔑</span> Sign-in providers</h2>
-      <p>HavIt supports Sign in with Apple and Sign in with Google. These providers only share your name and email address with us. We do not receive your password.</p>
+      <p>HavIt supports Sign in with Apple, Sign in with Google, and email/password registration. Social providers only share your name and email address with us. We do not receive your password.</p>
     </div>
 
     <div class="card">
       <h2><span class="icon">🗑️</span> Deleting your data</h2>
-      <p>You can delete your account and all associated data at any time from the <strong>Settings</strong> screen inside the app. Deletion is permanent and immediate.</p>
+      <p>You can delete your account and all associated data (items, photos, shopping list) at any time from the <strong>Settings</strong> screen inside the app. Deletion is permanent and immediate.</p>
     </div>
 
     <div class="card">
@@ -119,7 +137,7 @@
       <p>Questions or requests? Email us at <a href="mailto:f94tb7p9sx@privaterelay.appleid.com">f94tb7p9sx@privaterelay.appleid.com</a></p>
     </div>
 
-    <p class="footer">© 2026 HavIt. All rights reserved.</p>
+    <p class="footer">© 2026 HavIt. All rights reserved. &nbsp;·&nbsp; <a href="terms.html">Terms &amp; Conditions</a></p>
   </div>
 </body>
 </html>
